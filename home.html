@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TEST</title>
+  <meta name="title" content="Testing">
+  <meta name="description" content="TEST">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="/images/hero-banner.png">
+  <link rel="preload" as="image" href="/images/pattern-2.svg">
+  <link rel="preload" as="image" href="/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+  <header class="header" data-header>
+    <div class="container">
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link hover-1" data-nav-toggler>მთავარი</a>
+          </li>
+
+          <li>
+            <a href="#topics" class="navbar-link hover-1" data-nav-toggler>პოსტები</a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-link hover-1" data-nav-toggler>კონტაქტი</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-bottom">
+
+          <div class="profile-card">
+            <img src="/images/author-1.png" width="48" height="48" alt="User" class="profile-banner">
+
+            <div>
+              <p class="card-title">მოგესალმებით მომხმარებელო!</p>
+
+              <p class="card-subtitle">
+                თქვენ გაქვთ 0 მესიჯი
+              </p>
+            </div>
+          </div>
+
+          <ul class="link-list">
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">პროფილი</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">შენახულები</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">დამატება</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">პარამეტრები</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-bottom-link hover-1">გამოსვლა</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <p class="copyright-text">
+          Copyright © 2023.
+          საიტი შექმნა გიორგი ქავთარაძემ.
+        </p>
+
+      </nav>
+
+      <a href="#" class="btn btn-primary">გამოწერა</a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">მოგესალმებით საიტზე!</p>
+
+            <h1 class="headline headline-1 section-title">
+              <span class="span">TEST</span>
+            </h1>
+
+            <p class="hero-text">
+              ამ საიტის მეშვეობით თქვენ შეძლებთ გადმოიწეროთ თამაშები უფასოდ და მარტივად.
+            </p>
+
+            <div class="input-wrapper">
+
+              <input type="email" name="email_address" placeholder="ჩაწერეთ თქვენი ელ.ფოსტა" required
+                class="input-field" autocomplete="off">
+
+              <button class="btn btn-primary">
+                <span class="span">სიახლეების მიღება</span>
+
+                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+              </button>
+
+            </div>
+
+          </div>
+
+          <div class="hero-banner">
+            <img src="/images/pattern-2.svg" width="27" height="26" alt="shape" class="shape shape-1">
+            <img src="/images/pattern-3.svg" width="27" height="26" alt="shape" class="shape shape-2">
+          </div>
+          <img src="/images/shadow-1.svg" width="500" height="800" alt="" class="hero-bg hero-bg-1">
+          <img src="/images/shadow-2.svg" width="500" height="500" alt="" class="hero-bg hero-bg-2">
+        </div>
+      </section>
+
+      <section class="topics" id="topics" aria-labelledby="topic-label">
+        <div class="container">
+
+          <div class="card topic-card">
+
+            <div class="card-content">
+
+              <h2 class="headline headline-2 section-title card-title" id="topic-label">
+                ახალი თამაშები
+              </h2>
+
+              <p class="card-text">
+                არ გამოტოვო ახალად დამატებული თამაშები...
+              </p>
+
+              <div class="btn-group">
+                <button class="btn-icon" aria-label="previous" data-slider-prev>
+                  <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+                </button>
+
+                <button class="btn-icon" aria-label="next" data-slider-next>
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="slider" data-slider>
+              <ul class="slider-list" data-slider-container>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="/images/image-placeholder.webp" width="507" height="618" loading="lazy" alt="Sport"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">რბოლები</span>
+
+                      <p class="slider-subtitle">0 თამაში</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="/images/image-placeholder.webp" width="507" height="618" loading="lazy" alt="Travel"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">ექშენი</span>
+
+                      <p class="slider-subtitle">0 თამაში</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="/images/image-placeholder.webp" width="507" height="618" loading="lazy" alt="Design"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">ონლაინი</span>
+
+                      <p class="slider-subtitle">0 თამაში</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="/images/image-placeholder.webp" width="507" height="618" loading="lazy" alt="Movie"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">RPG</span>
+
+                      <p class="slider-subtitle">0 თამაში</p>
+                    </div>
+
+                  </a>
+                </li>
+
+                <li class="slider-item">
+                  <a href="#" class="slider-card">
+
+                    <figure class="slider-banner img-holder" style="--width: 507; --height: 618;">
+                      <img src="/images/image-placeholder.webp" width="507" height="618" loading="lazy" alt="Lifestyle"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="slider-content">
+                      <span class="slider-title">გადარჩენა</span>
+
+                      <p class="slider-subtitle">0 თამაში</p>
+                    </div>
+
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="section feature" aria-label="feature" id="featured">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title">
+            <span class="span">საიტის რჩეულები</span>
+          </h2>
+
+          <p class="section-text">
+            თამაშები რომლელთა ჩაწერასაც გირჩევთ...
+          </p>
+
+          <ul class="feature-list">
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="/images/Assetto Corsa.jpg" width="1602" height="903" loading="lazy"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#რბოლები</a>
+
+                      <a href="#" class="span hover-2">#რჩეულები</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">~ 1-3 წუთი კითხვის დრო</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Assetto Corsa
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="/images/author-1.png" width="48" height="48" loading="lazy" alt="Giorgi"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Giorgi</p>
+
+                        <p class="card-subtitle">23 მაისი 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">სრულად ნახვა</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="/images/Assetto Corsa.jpg" width="1602" height="903" loading="lazy" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#რბოლები</a>
+
+                      <a href="#" class="span hover-2">#რჩეულები</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">~ 1-3 წუთი კითხვის დრო</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Assetto Corsa
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="/images/author-1.png" width="48" height="48" loading="lazy" alt="Giorgi"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Giorgi</p>
+
+                        <p class="card-subtitle">23 მაისი 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">სრულად ნახვა</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="/images/Assetto Corsa.jpg" width="1602" height="903" loading="lazy"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#რბოლები</a>
+
+                      <a href="#" class="span hover-2">#რჩეულები</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">~ 1-3 წუთი კითხვის დრო</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Assetto Corsa
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="/images/author-1.png" width="48" height="48" loading="lazy" alt="Giorgi"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Giorgi</p>
+
+                        <p class="card-subtitle">23 მაისი 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">სრულად ნახვა</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="/images/Assetto Corsa.jpg" width="1602" height="903" loading="lazy"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#რბოლები</a>
+
+                      <a href="#" class="span hover-2">#რჩეულები</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">~ 1-3 წუთი კითხვის დრო</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Assetto Corsa
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="/images/author-1.png" width="48" height="48" loading="lazy" alt="Giorgi"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Giorgi</p>
+
+                        <p class="card-subtitle">23 მაისი 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">სრულად ნახვა</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="card feature-card">
+
+                <figure class="card-banner img-holder" style="--width: 1602; --height: 903;">
+                  <img src="/images/Assetto Corsa.jpg" width="1602" height="903" loading="lazy"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-tag">
+                      <a href="#" class="span hover-2">#რბოლები</a>
+
+                      <a href="#" class="span hover-2">#რჩეულები</a>
+                    </div>
+
+                    <div class="wrapper">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="span">~ 1-3 წუთი კითხვის დრო</span>
+                    </div>
+                  </div>
+
+                  <h3 class="headline headline-3">
+                    <a href="#" class="card-title hover-2">
+                      Assetto Corsa
+                    </a>
+                  </h3>
+
+                  <div class="card-wrapper">
+
+                    <div class="profile-card">
+                      <img src="/images/author-1.png" width="48" height="48" loading="lazy" alt="Giorgi"
+                        class="profile-banner">
+
+                      <div>
+                        <p class="card-title">Giorgi</p>
+
+                        <p class="card-subtitle">23 მაისი 2023</p>
+                      </div>
+                    </div>
+
+                    <a href="#" class="card-btn">სრულად ნახვა</a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-secondary">
+            <span class="span">სხვა პოსტების ნახვა</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+
+        </div>
+
+        <img src="/images/shadow-3.svg" width="500" height="1500" loading="lazy" alt="" class="feature-bg">
+
+      </section>
+
+      <section class="tags" aria-labelledby="tag-label">
+        <div class="container">
+
+          <h2 class="headline headline-2 section-title" id="tag-label">
+            <span class="span">პოპულარული კატეგორიები</span>
+          </h2>
+
+          <p class="section-text">
+            კატეგორიები რომლებიც ყველაზე პოპულარულია
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">რბოლები</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">სიმულატორი</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">გადარჩენა</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">ონლაინი</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">სტრატეგია</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">კოსმოსი</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">შუთერები</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">ექშენი</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">FPS</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">2D</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">Offline</p>
+              </button>
+            </li>
+
+            <li>
+              <button class="card tag-btn">
+                <p class="btn-text">სუსტი PC</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section recent-post" id="recent" aria-labelledby="recent-label">
+        <div class="container">
+
+          <div class="post-main">
+
+            <h2 class="headline headline-2 section-title">
+              <span class="span">ბოლოდროინდელი პოსტები</span>
+            </h2>
+
+            <p class="section-text">
+              არ გამოტოვო ახალი თამაშები
+            </p>
+
+            <ul class="grid-list">
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="/images/image-placeholder.webp" width="271" height="258" loading="lazy"
+                    class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">დაუმთავრებელი</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">პოსტი #1</a>
+                    </h3>
+
+                    <p class="card-text">
+                      ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#პოსტები</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">~ 3 წუთი კითხვის დრო</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="/images/image-placeholder.webp" width="271" height="258" loading="lazy"
+                    class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">დაუმთავრებელი</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">პოსტი #2</a>
+                    </h3>
+
+                    <p class="card-text">
+                      ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#პოსტები</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">~ 3 წუთი კითხვის დრო</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="/images/image-placeholder.webp" width="271" height="258" loading="lazy"
+                     class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">დაუმთავრებელი</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">პოსტი #3</a>
+                    </h3>
+
+                    <p class="card-text">
+                        ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#პოსტები</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">~ 3 წუთი კითხვის დრო</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="/images/image-placeholder.webp" width="271" height="258" loading="lazy"
+                     class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">დაუმთავრებელი<a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">პოსტი #4</a>
+                    </h3>
+
+                    <p class="card-text">
+                        ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#პოსტები</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">~ 3 წუთი კითხვის დრო</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="recent-post-card">
+
+                  <figure class="card-banner img-holder" style="--width: 271; --height: 258;">
+                    <img src="/images/image-placeholder.webp" width="271" height="258" loading="lazy"
+                     class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <a href="#" class="card-badge">დაუმთავრებელი</a>
+
+                    <h3 class="headline headline-3 card-title">
+                      <a href="#" class="link hover-2">პოსტი #5</a>
+                    </h3>
+
+                    <p class="card-text">
+                        ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან.
+                    </p>
+
+                    <div class="card-wrapper">
+                      <div class="card-tag">
+                        <a href="#" class="span hover-2">#პოსტები</a>
+                      </div>
+
+                      <div class="wrapper">
+                        <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                        <span class="span">~ 3 წუთი კითხვის დრო</span>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+            <nav aria-label="pagination" class="pagination">
+
+              <a href="#" class="pagination-btn" aria-label="უკან">
+                <ion-icon name="arrow-back" aria-hidden="true"></ion-icon>
+              </a>
+
+              <a href="#" class="pagination-btn">1</a>
+              <a href="#" class="pagination-btn">2</a>
+              <a href="#" class="pagination-btn">3</a>
+              <a href="#" class="pagination-btn" aria-label="წინ">...</a>
+
+              <a href="#" class="pagination-btn" aria-label="შემდეგი">
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </a>
+
+            </nav>
+
+          </div>
+
+          <div class="post-aside grid-list">
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">პოპულარული პოსტები</span>
+              </h3>
+
+              <ul class="popular-list">
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="/images/image-placeholder.webp" width="64" height="64" loading="lazy"
+                       class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">პოსტი #1</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">~ 15 წუთი კითხვის დრო</p>
+
+                        <time class="publish-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="/images/image-placeholder.webp" width="64" height="64" loading="lazy"
+                      class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">პოსტი #2</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">~ 15 წუთი კითხვის დრო</p>
+
+                        <time class="publish-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="/images/image-placeholder.webp" width="64" height="64" loading="lazy"
+                      class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">პოსტი #3</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">~ 15 წუთი კითხვის დრო</p>
+
+                        <time class="publish-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="/images/image-placeholder.webp" width="64" height="64" loading="lazy"
+                      class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">პოსტი #4</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">~ 15 წუთი კითხვის დრო</p>
+
+                        <time class="publish-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="popular-card">
+
+                    <figure class="card-banner img-holder" style="--width: 64; --height: 64;">
+                      <img src="/images/image-placeholder.webp" width="64" height="64" loading="lazy"
+                        class="img-cover">
+                    </figure>
+
+                    <div class="card-content">
+
+                      <h4 class="headline headline-4 card-title">
+                        <a href="#" class="link hover-2">პოსტი #5</a>
+                      </h4>
+
+                      <div class="warpper">
+                        <p class="card-subtitle">~ 15 წუთი კითხვის დრო</p>
+
+                        <time class="publish-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card">
+
+              <h3 class="headline headline-2 aside-title">
+                <span class="span">ბოლო კომენტარები</span>
+              </h3>
+
+              <ul class="comment-list">
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან. “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="/images/user.jpg" width="32" height="32" loading="lazy" alt="Username">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">გიორგი</p>
+
+                        <time class="card-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან. “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="/images/user.jpg" width="32" height="32" loading="lazy" alt="Username">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">გიორგი</p>
+
+                        <time class="card-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="comment-card">
+
+                    <blockquote class="card-text">
+                      “ ეს პოსტი ჯერ არ არის ატვირთული ან მოხდა შეცდომა მისი ჩატვირთვისას. გთხოვთ გადატვირთოთ საიტი და სცადენ თავიდან. “
+                    </blockquote>
+
+                    <div class="profile-card">
+                      <figure class="profile-banner img-holder">
+                        <img src="/images/user.jpg" width="32" height="32" loading="lazy"
+                          alt="Username">
+                      </figure>
+
+                      <div>
+                        <p class="card-title">გიორგი</p>
+
+                        <time class="card-date" datetime="2023-05-23">23 მაისი 2023</time>
+                      </div>
+                    </div>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="card aside-card insta-card">
+
+              <p class="card-text">
+                გამოგვყევი ინსტაგრამზე
+              </p>
+
+              <ul class="insta-list">
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="insta-post img-holder" style="--width: 276; --height: 277;">
+                    <img src="/images/404.jpg" width="276" height="277" loading="lazy" alt="insta post"
+                      class="img-cover">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="card footer">
+
+        <div class="section footer-top">
+
+          <div class="footer-brand">
+            <p class="footer-list-title">კონტაქტი</p>
+            <p class="footer-text">
+              უფს! შენ ჩამოხვედი საიტის დასასრულამდე. გადაავლე თვალი ჩვენს საკონტაქტო ინფორმაციას. თუ რაიმე კითხვა/საჩივარი გაგიჩნდებათ მოგვმართეთ სოც. ქსელებში, რომელიც აღნიშნულია ბოლოში.
+            </p>
+
+          </div>
+
+          <div class="footer-list">
+
+            <p class="footer-list-title">ელ.ფოსტა</p>
+
+            <p class="footer-text">
+              მიუთითე შენი ელ.ფოსტა და სახელი ქვემოთ და გაიგე ყველაფერი საიტის შესახებ წამებში.
+            </p>
+
+            <div class="input-wrapper">
+              <input type="text" name="name" placeholder="შენი სახელი" required class="input-field" autocomplete="off">
+
+              <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <div class="input-wrapper">
+              <input type="email" name="email_address" placeholder="ელ.ფოსტა" required class="input-field"
+                autocomplete="off">
+
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="span">გამოწერა</span>
+
+              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+          <p class="copyright">
+            &copy; საიტი შექმნა <a href="#" class="copyright-link">გიორგი ქავთარაძემ.</a>
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+
+                <span class="span">Twitter</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+
+                <span class="span">Instagram</span>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+  <script src="/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
